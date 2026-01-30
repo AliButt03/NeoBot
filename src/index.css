@@ -1,0 +1,148 @@
+/* ---------- RESET ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------- ROOT ---------- */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  background: var(--bg);
+  border-bottom: 1px solid #1e293b;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+/* ---------- CARD LAYOUT ---------- */
+.card {
+  max-width: 480px;
+  margin: 80px auto;
+  padding: 32px;
+  background: var(--card);
+  border-radius: 18px;
+  border: 1px solid #1e293b;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* ---------- CARD HEADINGS ---------- */
+.card h1 {
+  font-size: 2rem;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+
+.card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+/* ---------- CARD TEXT ---------- */
+.card p {
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+/* ---------- INPUTS ---------- */
+.card input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: var(--surface);
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+  color: var(--text);
+}
+
+/* ---------- BUTTONS ---------- */
+.card button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 14px;
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* ---------- LINKS ---------- */
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* ---------- DOCS PAGE ---------- */
+.docs-card {
+  max-width: 800px;
+  text-align: left;
+}
+
+.docs-card h3 {
+  margin-top: 20px;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+/* ---------- DOCS PAGE FULL HEIGHT ---------- */
+.docs-container {
+  min-height: calc(100vh - 64px); /* subtract navbar height */
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  background: var(--bg);
+}
+
+/* ---------- HOME PAGE FULL HEIGHT ---------- */
+.home-container {
+  min-height: calc(100vh - 64px); /* subtract navbar height */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* start from top */
+  padding: 40px 20px;
+  background: var(--bg);
+}
+
