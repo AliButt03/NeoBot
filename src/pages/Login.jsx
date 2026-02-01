@@ -7,13 +7,13 @@ import { doc, setDoc } from "firebase/firestore";
 import { auth, db } from "../firebase/firebase";
 import { useNavigate } from "react-router-dom";
 
-const ADMIN_CODE = "SECRET_ADMIN_123";
+const ADMIN_CODE = import.meta.env.VITE_ADMIN_CODE;
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [adminCode, setAdminCode] = useState("");
-  const [error, setError] = useState(""); // <-- new
+  const [error, setError] = useState(""); 
   const navigate = useNavigate();
 
   const signup = async () => {
